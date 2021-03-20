@@ -517,6 +517,8 @@
         display: flex;
         flex-direction: column;
         width: 70%;
+        height: 350px;
+        align-content: space-between;
         margin: auto;
         grid-template-columns: none;
         grid-column-gap: 0;
