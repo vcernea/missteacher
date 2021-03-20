@@ -514,11 +514,14 @@
     }
 
     .contact__form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
         width: 70%;
-        margin: auto
+        margin: auto;
+        grid-template-columns: none;
+        grid-column-gap: 0;
+        grid-row-gap: 25px;
+        grid-template-rows: none;
     }
 
     .contact .contact__header {
@@ -528,14 +531,13 @@
     }
 
     .contact__form .contact__input {
+        width: auto;
         padding: 5px 10px;
         color: #580000;
     }
 
     .contact__form textarea.contact__input {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
+        order: 3;
         height: 150px;
         line-height: 1.4;
     }
